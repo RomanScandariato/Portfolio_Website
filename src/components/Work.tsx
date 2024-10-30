@@ -11,6 +11,8 @@ function Work() {
                     <article key={index} style={{ backgroundImage: `linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, .3)), url(${workObj.backgroundImage})` }}>
                         <h5>{workObj.title}</h5>
                         <p>{workObj.description}</p>
+                        <p>Git Link: <a href={workObj.git_link} target='_blank'>{workObj.git_link}</a></p>
+                        <p>Deploy Link: <a href={workObj.deploy_link} target='_blank'>{workObj.deploy_link}</a></p>
                     </article>
                 ))}
             </section>
